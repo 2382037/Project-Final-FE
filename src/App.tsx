@@ -48,7 +48,7 @@ function App() {
             }
           />
           <Route
-            path="posts"
+            path="shoes"
             element={
               <PrivateRoute>
                 <ShoesPage />

@@ -9,7 +9,9 @@ import { BellIcon } from "@heroicons/react/16/solid";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../utils/AuthProvider";
 
-const navigation = [{ name: "Post", to: "/posts", current: false }];
+const navigation = [  { name: "Home", to:"/", current: false},
+                      { name: "Shoes", to: "/shoes", current: false }
+];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -55,7 +57,6 @@ const Navbar = () => {
               <BellIcon aria-hidden="true" className="size-6" />
             </button>
 
-            {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
