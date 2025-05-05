@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
-import { Check, ChevronRight, Star } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { ChevronRight, Star } from "lucide-react";
 // Removed: import Link from 'next/link';
 
 export default function Home() {
