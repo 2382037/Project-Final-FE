@@ -22,6 +22,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     localStorage.removeItem("token");
     setIsAuthenticated(false);
   };
+  
   const getToken = (): string | null => {
     return localStorage.getItem("token");
   };

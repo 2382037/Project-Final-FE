@@ -9,11 +9,11 @@ import BaseLayout from "./layouts/BaseLayout";
 import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Post from "./pages/Post";
 import Register from "./pages/Register";
 import PrivateRoute from "./utils/PrivateRoute";
 import PublicRoute from "./utils/PublicRoute";
 import { AuthProvider } from "./utils/AuthProvider";
+import ShoesPage from "./pages/ShoesPage";
 
 const queryClient = new QueryClient();
 function App() {
@@ -51,7 +51,7 @@ function App() {
             path="posts"
             element={
               <PrivateRoute>
-                <Post />
+                <ShoesPage />
               </PrivateRoute>
             }
           />
